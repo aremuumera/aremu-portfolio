@@ -12,7 +12,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
 </head>
-<body>
+<body>                      
+
+                                             <!-- loader -->
+
+    <div id="loader"></div>
 
                                             <!-- Home section start -->
     <section id="Home" class="home">
@@ -357,11 +361,17 @@
     </footer>
 
                                      <!-- footer section end-->
-        <script>
-        window.addEventListener('load', function() {
-            document.body.classList.add('loaded');
-        });
-        </script>                      
+     <script>
+        var loader = document.getElementById("loader");
+
+        window.addEventListener("load", function () {
+            loader.style.display = "none";
+
+
+        })
+
+
+     </script>                   
     
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script defer src="./script.js"></script>
