@@ -40,7 +40,7 @@ body, html {
     overscroll-behavior: none;
 }
 #Home{
-    background-image: url(./wallpaperflare.com_wallpaper\ \(2\).jpg);
+    background-image: url(./asset/wallpaperflare.com_wallpaper\ \(2\).jpg);
     background-position: center;
     background-size: cover;
     background-repeat:no-repeat ;
@@ -496,7 +496,7 @@ span{
                                      /* projects section start */
 .projects{
 background-position: center;
-background-image: url(./wallpaperflare.com_wallpaper\ \(7\).jpg);
+background-image: url(./asset/wallpaperflare.com_wallpaper\ \(7\).jpg);
 background-repeat: no-repeat;
 background-size: cover;
 height: 100vh !important;
@@ -612,7 +612,7 @@ section.horizontal .pin-wrap
                                       /* project section end */
                                     /* contact section start */
 .contact{
-    background: url(./wallpaperflare.com_wallpaper\ \(4\).jpg);
+    background: url(./asset/wallpaperflare.com_wallpaper\ \(4\).jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
