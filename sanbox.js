@@ -102,6 +102,9 @@ const contactContent = new Typed ('#contactContent', {
 //             return false;
 //         }
 //     };
+
+
+document.addEventListener('DOMContentLoaded', function() {
     
    const anim = document.querySelectorAll(".anim");
     observer = new IntersectionObserver ((entries) =>{
@@ -182,7 +185,7 @@ xixa.forEach(nia =>{
     minaObserver.observe(nia);
 })
 
-
+});
 
 
 
@@ -213,6 +216,8 @@ navLinks.forEach(navLink => {
   });
 });
                         // horizontal scroll
+
+    document.addEventListener('DOMContentLoaded', function () {
                         gsap.registerPlugin(ScrollTrigger);
                         
 
@@ -250,6 +255,7 @@ function refresh() {
       
     });
 
+    })
 
     
 
