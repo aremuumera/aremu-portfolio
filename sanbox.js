@@ -183,30 +183,7 @@ xixa.forEach(nia =>{
 })
 
 
-// GSAP timeline
 
-// var tl = gsap.timeline();
-
-// // Add animation for .fade-in-bottom-a
-// tl.fromTo(".fade-in-bottom-a", { y: 50, opacity: 0 }, { y: 0, opacity: 1, duration: 2, ease: "cubic-bezier(0.390, 0.575, 0.565, 1.000)" });
-
-// // Add animation for .fade-in-bottom-b with a delay of 1.2 seconds
-// tl.fromTo(".fade-in-bottom-b", { y: 50, opacity: 0 }, { y: 0, opacity: 1, duration: 2, ease: "cubic-bezier(0.390, 0.575, 0.565, 1.000)" }, 1.2);
-
-// // Add animation for .fade-in-bottom-c with a delay of 1.6 seconds
-// tl.fromTo(".fade-in-bottom-c", { y: 50, opacity: 0 }, { y: 0, opacity: 1, duration: 2, ease: "cubic-bezier(0.390, 0.575, 0.565, 1.000)" }, 1.6);
-
-// // Add animation for .fade-in-bottom-d with a delay of 1.9 seconds
-// tl.fromTo(".fade-in-bottom-d", { y: 50, opacity: 0 }, { y: 0, opacity: 1, duration: 2, ease: "cubic-bezier(0.390, 0.575, 0.565, 1.000)" }, 1.9);
-
-// You can use the ScrollTrigger to trigger the animation on scroll if needed
-// ScrollTrigger.create({
-//   trigger: ".fade-in-bottom-a",
-//   start: "top 80%", // Adjust as needed based on when you want the animation to start
-//   end: "bottom top", // Adjust as needed based on when you want the animation to end
-//   animation: tl,
-//   scrub: true,
-// });
 
 
 const navLinks = document.querySelectorAll('.nav-container ul li a');
@@ -239,46 +216,6 @@ navLinks.forEach(navLink => {
                         gsap.registerPlugin(ScrollTrigger);
                         
 
-        // const horizontalContainer = document.querySelector('.animation-wrap');
-        
-        // gsap.to(horizontalContainer, {
-        //     scrollTrigger: {
-        //         trigger: horizontalContainer,
-        //         start: 'top center',
-        //         end: 'bottom center',
-        //         scrub: 1,
-        //         pin: true,
-        //     },
-        //     x: () => -(horizontalContainer.scrollWidth - window.innerWidth),
-        // });                 
-                        
-
-
-
-//     const thisPinWrap = document.querySelector('.pin-wrap');
-//     const thisAnimWrap = thisPinWrap.querySelector('.animation-wrap');
-    
-
-//     let tl = gsap.timeline({
-//         defaults: {
-//             ease:"none"
-//         },
-//         scrollTrigger:{
-//             trigger: "thisPinWrap",
-//             pin: true,
-//             scrub: 0.1,
-//             start:'top 45vh',
-//             end: () => "+=" + (thisPinWrap.scrollWidth - window.innerWidth),
-//             // markers: true,
-//             invalidateOnRefresh: true,
-//             snap: 20,
-//         }
-//     });
-
-//    tl.to(thisPinWrap, {
-//     xPercent: -29,
-//    })
-
    const horizontalSections = gsap.utils.toArray('.horizontal')
 
     horizontalSections.forEach(function (sec, i) {	
@@ -286,7 +223,6 @@ navLinks.forEach(navLink => {
   var thisPinWrap = sec.querySelector('.pin-wrap');
   var thisAnimWrap = thisPinWrap.querySelector('.animation-wrap');
   
-//   var getToValue = () => -(thisAnimWrap.scrollWidth - window.innerWidth); 
 function refresh() {
     pinWrapWidth = thisAnimWrap.scrollWidth;
     horizontalScrollLength = pinWrapWidth - window.innerWidth;
@@ -318,14 +254,3 @@ function refresh() {
     
 
 
-// const horizontalSections = gsap.utils.toArray('section.horizontal');
-
-// horizontalSections.forEach(function (item, i) {	
-  
-//   var thisPinWrap = item.querySelector('.pin-wrap');
-//   var thisAnimWrap = thisPinWrap.querySelector('.animation-wrap');
-  
-//   var getToValue = () => -(thisAnimWrap.scrollWidth - window.innerWidth); 
-
-
-// });
