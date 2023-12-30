@@ -40,7 +40,7 @@ body, html {
     overscroll-behavior: none;
 }
 #Home{
-    background-image: url(./asset/wallpaperflare.com_wallpaper\ \(2\).jpg);
+    background-image: url(./asset/wallpaperflare.com_wallpaper\ \(2\).jpg) !important;
     background-position: center;
     background-size: cover;
     background-repeat:no-repeat ;
