@@ -17,9 +17,10 @@
 }
 body {
     background: #111;
-    /* padding-top: 70px !important; */
+    margin-top: 70px !important;
     scrollbar-width:3px !important;
     scrollbar-color: #9845E8 !important;
+    z-index: -99;
 }
 html, body, section.horizontal {
     overflow-x: hidden !important;
@@ -39,13 +40,14 @@ body, html {
     scroll-behavior: smooth !important;
     overscroll-behavior: none;
 }
-#loader{
+/* #loader{
     background: #111 url(./asset/loader.gif) no-repeat center center;
     height:100vh;
+    background-size: 10%;
     width: 100%;
     position: fixed;
     z-index: 10000000;
-}
+} */
 #Home{
     background-image: url(./asset/wallpaperflare.com_wallpaper\ \(2\).jpg) !important;
     background-position: center;
