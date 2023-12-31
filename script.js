@@ -104,12 +104,12 @@ const contactContent = new Typed ('#contactContent', {
 //     };
 
 
-document.addEventListener('DOMContentLoaded', function() {
-    
+
+   
    const anim = document.querySelectorAll(".anim");
     observer = new IntersectionObserver ((entries) =>{
     entries.forEach(entry => {
-        // console.log(entries);
+        console.log(entries);
         if (entry.intersectionRatio > 0){
            entry.target.style.animation = `fade-in-left 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) ${entry.target.dataset.delay} both`; 
            entry.target.style.animation = `fade-in-left 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) ${entry.target.dataset.delay} both`; 
@@ -169,11 +169,11 @@ imna.forEach(nia =>{
 })
 
 
-
+document.addEventListener('DOMContentLoaded', function() {
 const xixa = document.querySelectorAll(".xixa");
 xixaObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry =>{
-        if (entry.intersectionRatio > 0){
+        if (entry.isIntersecting){
             entry.target.style.animation = `fade-in-bottom 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) ${entry.target.dataset.delay} both`
         }else {
             entry.target.style.removeProperty('animation');
@@ -183,9 +183,10 @@ xixaObserver = new IntersectionObserver((entries) => {
 
 xixa.forEach(nia =>{
     minaObserver.observe(nia);
+});
 })
 
-});
+
 
 
 

@@ -17,11 +17,12 @@
 }
 body {
     background: #111;
-    margin-top: 70px !important;
+    margin-top: 70px !important ;
     scrollbar-width:3px !important;
     scrollbar-color: #9845E8 !important;
-    z-index: -99;
+    
 }
+
 html, body, section.horizontal {
     overflow-x: hidden !important;
   }
@@ -48,6 +49,9 @@ body, html {
     position: fixed;
     z-index: 10000000;
 } */
+                                            
+
+
 #Home{
     background-image: url(./asset/wallpaperflare.com_wallpaper\ \(2\).jpg) !important;
     background-position: center;
@@ -526,7 +530,7 @@ section.horizontal .pin-wrap
     scroll-behavior: smooth !important;
 }
 .pin-wrap{
-    width: 218% !important;
+    width: 220% !important;
 }
 .project-cont{
     display: flex;
@@ -2446,10 +2450,11 @@ section.horizontal .pin-wrap
 
                         /* screen 365px */
      @media screen and (max-width: 365px){
+       
         .container{
             margin-bottom: 10px !important;
             margin: 0px 20px 0px;
-            padding-top: 60px;
+            margin-top: 20px;
          }
          .about{
             height: 100% !important;

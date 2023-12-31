@@ -5,18 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@A R E M U_U M E R A</title>
     <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="./style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="./asset/wallpaperflare.com_wallpaper (2).jpg" as="image">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="icon" type="image/x-icon" href="./asset/trnn bg.png">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
+    <script defer src="./script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
 </head>
-<body>                      
+<body >                      
 
                                              <!-- loader -->
-
     <!-- <div id="loader"></div> -->
+    
 
                                             <!-- Home section start -->
     <section id="Home" class="home">
@@ -107,15 +109,15 @@
             </ul>
         </div>
         <div class="container ">
-            <h1 class="xixa" data-delay=".2s">Hi<span>&#128075;&#127999;</span></h1>   
-            <div class="intro-container  fade-in-bottom-a  xixa" data-delay=".4s">
-                <h1 id="myName" class="fade-in-bottom-b xixa" data-delay=".6s">I'm <span id="element"></span></h1>  
-                <p class="fade-in-bottom-c xixa" data-delay=".8s">I am confident that every concept holds potential for execution and I find immense joy in crafting digital entities that reside on the internet either websites, applications, or anything in the vast digital landscape.
-                   
-                    <!-- I've manage to gain a decent amount of experience and valuable knowledge from all different kinds of fields throughout my projects/work. -->
+            <h1 class="xixa" data-delay=".8s" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">Hi<span>&#128075;&#127999;</span></h1>   
+            <div class="intro-container">
+                <h1 id="myName" class="fade-in-bottom-b xixa" data-delay="1s" data-aos="fade-up" data-aos-delay="1000" data-aos-duration="1000">I'm <span id="element"></span></h1>  
+                <p class="fade-in-bottom-c xixa" data-delay="1.5s"  data-aos="fade-up" data-aos-delay="2000" data-aos-duration="1000">
+                I am confident that every concept holds potential for execution and I find immense joy in crafting digital 
+                entities that reside on the internet either websites, applications, or anything in the vast digital landscape.
                 </p>
             </div>
-            <div class="btn fade-in-bottom-d xixa" data-delay="1s">
+            <div class="btn fade-in-bottom-d xixa" data-delay="2s"  data-aos="fade-up" data-aos-delay="3000" data-aos-duration="1000">
                 <a href="#Projects"> Check out my projects!</a>
                 <a href="#"> Resume <i class='bx bx-cloud-download bx-tada download'></i></a>
             </div>
@@ -374,6 +376,10 @@
      </script>                    -->
     
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <script defer src="./script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    
 </body>
 </html>
