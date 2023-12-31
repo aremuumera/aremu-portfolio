@@ -170,6 +170,7 @@ imna.forEach(nia =>{
 
 
 document.addEventListener('DOMContentLoaded', function() {
+   
 const xixa = document.querySelectorAll(".xixa");
 xixaObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry =>{
@@ -183,8 +184,8 @@ xixaObserver = new IntersectionObserver((entries) => {
 
 xixa.forEach(nia =>{
     minaObserver.observe(nia);
-});
 })
+});
 
 
 
