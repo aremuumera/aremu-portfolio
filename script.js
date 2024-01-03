@@ -170,22 +170,29 @@ imna.forEach(nia =>{
 
 
 document.addEventListener('DOMContentLoaded', function() {
-   
-const xixa = document.querySelectorAll(".xixa");
-xixaObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry =>{
-        if (entry.isIntersecting){
-            entry.target.style.animation = `fade-in-bottom 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) ${entry.target.dataset.delay} both`
-        }else {
-            entry.target.style.removeProperty('animation');
-        }
-    })
-}); //
+    const xixaElements = document.querySelectorAll(".xixa");
 
-xixa.forEach(nia =>{
-    minaObserver.observe(nia);
-})
+    xixaElements.forEach((element) => {
+        element.classList.add('fade-in-bottom-a');
+    });
+
+    xixaObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = 1;
+            } else {
+                entry.target.style.opacity = 0;
+            }
+        });
+    });
+
+    xixaElements.forEach(nia => {
+        xixaObserver.observe(nia);
+    });
 });
+
+
+
 
 
 

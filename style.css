@@ -74,6 +74,11 @@ header{
 width: 100%;
 max-width: 80px;
 }
+/* Initial style to hide elements */
+.xixa {
+    opacity: 0;
+}
+
 /* .show{
     opacity: 1;
     filter: blur(0px);
@@ -155,22 +160,22 @@ max-width: 80px;
     font-size: 4.5rem;
  }
         /* nav-container */
-/* .fade-in-bottom-a {
-    /* -webkit-animation: fade-in-bottom 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both; */
-            /* animation: fade-in-bottom 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1s both; 
+ .fade-in-bottom-a {
+    /* -webkit-animation: fade-in-bottom 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1s both; */
+             animation: fade-in-bottom 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) .6s both; 
 }
-/* .fade-in-bottom-b {
-	/* -webkit-animation: fade-in-bottom 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both; */
-	        /* animation: fade-in-bottom 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1.2s both; 
-} */
-/* .fade-in-bottom-c {
-	/* -webkit-animation: fade-in-bottom 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both; */
-	        /* animation: fade-in-bottom 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1.6s both; 
-} */
-/* .fade-in-bottom-d {
-	/* -webkit-animation: fade-in-bottom 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both; */
-	        /* animation: fade-in-bottom 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1.9s both; 
-}  */
+ .fade-in-bottom-b {
+	/* -webkit-animation: fade-in-bottom 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1.2s both; */
+	         animation: fade-in-bottom 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) .9s both; 
+} 
+ .fade-in-bottom-c {
+	/* -webkit-animation: fade-in-bottom 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1.6s both; */
+	         animation: fade-in-bottom 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1.2s both; 
+} 
+ .fade-in-bottom-d {
+	/* -webkit-animation: fade-in-bottom 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1.9s both; */
+	         animation: fade-in-bottom 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1.5s both; 
+}  
 
 
             /* social media handle */
@@ -645,23 +650,23 @@ section.horizontal .pin-wrap
    line-height: 40px; 
    text-align: center !important;
 }
-/* .fade-in-bottom {
-    /* -webkit-animation: fade-in-bottom 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1s both; 
-            /* animation: fade-in-bottom 2s cubic-bezier(0.390, 0.575, 0.565, 1.000)  both; 
+.fade-in-bottom {
+    /* -webkit-animation: fade-in-bottom 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1s both; */
+            animation: fade-in-bottom 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1s  both; 
            
 }
 .fade-in-bottom-2 {
-    /* -webkit-animation: fade-in-bottom 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1.4s both; 
-            /* animation: fade-in-bottom 2s cubic-bezier(0.390, 0.575, 0.565, 1.000)  both; 
+    /* -webkit-animation: fade-in-bottom 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1.4s both; */
+             animation: fade-in-bottom 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1.4s both; 
 }
 .fade-in-bottom-3 {
-    /* -webkit-animation: fade-in-bottom 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1.6s both; 
-            /* animation: fade-in-bottom 2s cubic-bezier(0.390, 0.575, 0.565, 1.000)  both; 
+    /* -webkit-animation: fade-in-bottom 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1.6s both; */
+            animation: fade-in-bottom 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1.6s both; 
 }
 .fade-in-bottom-4 {
-    /* -webkit-animation: fade-in-bottom 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1.8s both; 
-       /* animation: fade-in-bottom 2s cubic-bezier(0.390, 0.575, 0.565, 1.000)  both; 
-} */
+    /* -webkit-animation: fade-in-bottom 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1.8s both; */
+        animation: fade-in-bottom 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1.8s  both; 
+} 
 .contact-handle{
     padding-top:60px;
 }
@@ -2524,7 +2529,7 @@ section.horizontal .pin-wrap
 .project-cont{
     display: flex;
     align-items: center;
-    gap: 60px;
+    gap: 40px;
     margin-top: 130px;
     margin-left: 20px ;
     width: 100% !important;
