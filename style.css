@@ -977,6 +977,8 @@ section.horizontal .pin-wrap
         display: flex;
         flex-direction:column !important ;
         text-align: center;
+        justify-content: center;
+        align-items: center;
         row-gap: 70px;
         margin-top: 100px;
   }
